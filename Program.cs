@@ -6,19 +6,16 @@ namespace arrays
     {
         static void Main(string[] args)
         {
-            string[] names = new string[5];
+            int[] numbers = {34, 5, 67, 1, 99, 34, 44, 78, 34, 0};
+            int total = 0;
+            foreach (int i in numbers)
+            {
+               total = total + i;
 
-        names[0] = "Coraline";
-        names[1] = "Jane";
-        names[2] = "Sarah";
-        names[3] = "Jake";
-        names[4] = "Felicity";
-
-        foreach(string s in names)
-        Console.WriteLine("Hello " + s);
-    
-
-        Console.ReadLine();
+            }
+            Console.WriteLine(total);
         }
+
     }
 }
+
